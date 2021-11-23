@@ -1,0 +1,156 @@
+.navbarItems2{
+    background: #00447c;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+
+}
+.nav-menu2 { 
+display: grid;
+grid-template-columns: repeat(7,auto);
+grid-gap: 10px;
+list-style: none;
+text-align: center;
+width: 790vw;
+justify-content: center;
+margin-right: 2rem;
+padding-top:15px;
+}
+
+.nav-links2 {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;;
+    cursor: pointer;
+}
+
+.nav-links2:hover{
+    background-color: #1a83ff;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fa-bars{
+    color: #fff;
+}
+
+.nav-links2-mobile{
+    display: none
+}
+
+.menu-icon2{
+    display: none;
+}
+
+.logo__user2{
+    margin-left: 1rem;
+}
+
+.btn__navbar{
+    padding: 10px 30px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #79c0e9;
+    margin-right: 1.5rem;
+}
+.btn__navbar:hover{
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+    background: #fff;
+    background-color: #00447c;
+    transition: 250ms;
+}
+
+.fa-user{
+    color: #fff;
+}
+.fa-user:hover{
+    color: #1a83ff;
+}
+
+@media (max-width: 768px) {
+
+    .btn__navbar{
+        display: none;
+    }
+    .navbarItems2 {
+        position: relative;
+    }
+    .nav-menu2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-menu2.active{
+    background: #00447c;
+    left:0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    }
+    .nav-links2 {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        cursor: pointer;
+    }
+    .nav-links2:hover{
+        background-color: #1a83ff;
+        border-radius: 0px;
+    }
+    .logo__user2{
+        position:absolute;
+        top: 0;
+        left: 0;
+        transform: translate(10%, 20%);
+    }
+    .menu-icon2{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .fa-times{
+        color: #fff;
+        font-size: 2rem;
+    }
+    .nav-links2-mobile{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        background: #79c0e9;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        
+    }
+
+    .nav-links2-mobile:hover {
+        background: #fff;
+        color: #00447c;
+        transition: 250ms;
+        text-decoration: none;
+    
+    }
+
+
+}
